@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="../source/img/logo.svg" width="195" height="96" alt="Городок Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a>Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy
+              </a>
+            </li>
+          </ul>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        </div>
+
+      </nav>
+
+    </header>
 
   </body>
 </html>
