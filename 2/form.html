@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="form" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,52 +7,57 @@
   <base href="https://htmlacademy-adaptive.github.io/2121153-sedona-26/2/">
 </head>
 
-<body class="form__body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="../source/img/logo.svg" width="195" height="96" alt="Городок Седона.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a>
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
+<body class="page__body">
+  <div class="page__container">
+    <header class="page__header">
+      <a class="page__logo">
+        <img class="page__logo-image" src="./img/logo.svg" width="195" height="96" alt="Городок Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page__main">
+      <h1 class="visually-hidden">Отзывы о Седоне</h1>
+
+      <div class="page__preview preview">
+        <h2 class="visually-hidden">Городок Седона</h2>
+        <img class="preview__image" src="./img/logo-sedona.svg" width="229" height="39" alt="Логотип Седоны.">
       </div>
-    </nav>
-  </header>
 
-  <main class="main-container">
-    <h1 class="visually-hidden">Отзывы о Седоне</h1>
+      <section class="section-content">
+        <h2 class="section-content__title">Оставьте свой отзыв</h2>
+        <p class="section-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных вами
+          достопримечательностях</p>
+      </section>
 
-    <div class="form-logo">
-      <h2 class="visually-hidden">Городок Седона</h2>
-      <img class="form-logo__image" src="../source/img/logo-sedona.svg" width="229" height="39" alt="Логотип Седоны.">
-    </div>
 
-    <section class="review">
-      <h2 class="review__title">Оставьте свой отзыв</h2>
-      <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
       <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="review-form__name">
           <legend class="review-form__title">Представьтесь:</legend>
@@ -140,18 +145,16 @@
           </label>
         </fieldset>
 
-        <button class="review-form__button" type="submit">Отправить отзыв</button>
+        <button class="button" type="submit">Отправить отзыв</button>
         <span class="footnote">* — обязательные поля</span>
       </form>
-    </section>
-  </main>
+    </main>
 
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <footer class="page__footer footer">
       <h2 class="visually-hidden">Контакты</h2>
-      <a class="main-footer__tag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
+      <a class="footer__tag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
 
-      <div class="main-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
@@ -171,32 +174,35 @@
         </ul>
       </div>
 
-      <div class="main-footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
+    </footer>
+
+    <div class="modal modal-failure">
+      <section class="section-content modal__section-content">
+        <h3 class="section-content__title">Что-то пошло не так!</h3>
+        <p class="section-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="button modal__button">Ок</button>
+      </section>
     </div>
-  </footer>
 
-  <div class="modal-container modal-failure">
-    <section class="modal__content">
-      <h3 class="modal__title">Что-то пошло не так!</h3>
-      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button">Ок</button>
-    </section>
+    <div class="modal modal-success">
+      <section class="section-content modal__section-content">
+        <h3 class="section-content__title">Ваш отзыв отправлен!</h3>
+        <p class="section-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+          мы опубликуем его
+          на сайте.</p>
+      </section>
+      <div class="modal__button-wrapper">
+        <button class="button modal__button">Закрыть окно</button>
+      </div>
+    </div>
   </div>
-
-  <div class="modal-container modal-success">
-    <section class="modal__content">
-      <h3 class="modal__title">Ваш отзыв отправлен!</h3>
-      <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его
-        на сайте.</p>
-      <button class="modal__button">Закрыть окно</button>
-    </section>
-  </div>
-
 </body>
 
 </html>
