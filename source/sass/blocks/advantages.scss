@@ -1,7 +1,7 @@
 .advantages__item--background {
-  background-color: #81B3D2;
-}
+  background-color: $brand-color;
 
-.advantages__item--tonality {
-  background-color: #EEEEEE;
+  &--tonality {
+    background-color: $tonality-color;
+  }
 }

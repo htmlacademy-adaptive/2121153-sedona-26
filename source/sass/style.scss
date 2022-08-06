@@ -17,6 +17,7 @@
 @use "./blocks/section-content.scss";
 @use "./blocks/social.scss";
 @use "./blocks/visually-hidden.scss";
+@use "./blocks/variable.scss";
 
 html {
   height: 100%;
@@ -37,3 +38,4 @@ img {
   max-width: 100%;
   object-fit: cover;
 }
+
