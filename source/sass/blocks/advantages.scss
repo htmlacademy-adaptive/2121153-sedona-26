@@ -5,3 +5,38 @@
 .advantages__item--tonality {
   background-color: #eeeeee;
 }
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+
+  &--accent {
+    color: #ffffff;
+  }
+}
+
+.advantages__number {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 15px;
+
+  &--accent {
+    color: #ffffff;
+  }
+
+  &--accent-bold {
+    font-weight: 700;
+  }
+}
+
+.advantages__description {
+  font-weight: 400;
+  text-transform: uppercase;
+
+  &--accent {
+    color: #ffffff;
+  }
+}
