@@ -3,6 +3,10 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+
+  &--accent {
+    font-weight: 700;
+  }
 }
 
 .section-content__description {
