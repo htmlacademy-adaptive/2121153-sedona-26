@@ -1,0 +1,238 @@
+.advantages__item {
+  margin: 0;
+  padding: 26px;
+}
+.advantages__item--background {
+  background-color: #81B3D2;
+  margin: 0;
+  padding: 33px 22px 40px 16px;
+}
+.advantages__item--tonality {
+  background-color: #eeeeee;
+}
+.advantages__item--inner {
+  margin: 0;
+  padding: 23px 20px 0 18px;
+}
+.advantages__item--padding {
+  padding: 39px 16px 35px 15px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.advantages__title--accent {
+  color: #ffffff;
+}
+
+.advantages__number {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 15px;
+}
+.advantages__number--accent {
+  color: #ffffff;
+}
+.advantages__number--accent-bold {
+  font-weight: 700;
+}
+
+.advantages__description {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.advantages__description--accent {
+  color: #ffffff;
+}
+
+.button {
+  background-color: #81B3D2;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 49px;
+}
+.button--modal {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.catalog__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog__author {
+  font-weight: 400;
+}
+
+.catalog__amount-like {
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog__card {
+  margin: 0;
+  padding: 24px 20px 25px 20px;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../fonts/ptsans.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../fonts/ptsansbold.woff2) format("woff2");
+  font-display: swap;
+}
+.main-nav__link {
+  background-color: #81B3D2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.page-footer {
+  margin: 0;
+  padding: 38px 78px 29px 76px;
+}
+
+.page-footer__tag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.copyright__text {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.page-preview {
+  background-image: url("../../img/page-preview-background.jpg");
+  background-repeat: no-repeat;
+  background-color: rgba(129, 179, 210, 0.5);
+  padding: 90px 19px 85px 19px;
+}
+
+.control-input {
+  background-color: #f2f2f2;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.control-input--user {
+  color: #000000;
+}
+
+.review-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.control {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.control-label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: none;
+}
+
+.footnote {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  text-transform: uppercase;
+}
+
+.section-content {
+  margin: 0;
+  padding: 32px 20px 16px 18px;
+}
+.section-content--padding {
+  padding: 38px 29px 32px 30px;
+}
+.section-content--indent {
+  padding: 36px 20px 28px 20px;
+}
+
+.section-content__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.section-content__title--accent {
+  font-weight: 700;
+}
+
+.section-content__description {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
