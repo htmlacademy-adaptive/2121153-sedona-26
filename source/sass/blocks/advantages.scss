@@ -1,9 +1,25 @@
-.advantages__item--background {
-  background-color: #81B3D2;
-}
+.advantages__item {
+  margin: 0;
+  padding: 26px;
 
-.advantages__item--tonality {
-  background-color: #eeeeee;
+  &--background {
+    background-color: #81B3D2;
+    margin: 0;
+    padding: 33px 22px 40px 16px;
+  }
+
+  &--tonality {
+    background-color: #eeeeee;
+  }
+
+  &--inner {
+    margin: 0;
+    padding: 23px 20px 0 18px;
+  }
+
+  &--padding {
+    padding: 39px 16px 35px 15px;
+  }
 }
 
 .advantages__title {
