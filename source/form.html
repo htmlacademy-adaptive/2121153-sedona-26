@@ -18,22 +18,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">
+              <a class="main-nav__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a>
+              <a class="main-nav__link">
                 Форма отзыва
               </a>
             </li>
             <li class="main-nav__item">
-              <a href="#">
+              <a class="main-nav__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -61,11 +61,11 @@
         <fieldset class="review-form__name">
           <legend class="review-form__title">Представьтесь:</legend>
           <label class="control" for="name">Имя*:</label>
-          <input class="control-input" id="name" type="text" name="username" value="Пётр">
+          <input class="control-input control-input--user" id="name" type="text" name="username" value="Пётр">
           <label class="control" for="surname">Фамилия*:</label>
-          <input class="control-input" id="surname" type="text" name="usersurname" value="Пустота">
+          <input class="control-input control-input--user" id="surname" type="text" name="usersurname" value="Пустота">
           <label class="control" for="patronymic">Отчество:</label>
-          <input class="control-input" id="patronymic" type="text" name="userpatronymic" value="Викторович">
+          <input class="control-input control-input--user" id="patronymic" type="text" name="userpatronymic" value="Викторович">
         </fieldset>
 
         <fieldset class="review-form__contacts">
@@ -185,7 +185,7 @@
         <h3 class="section-content__title">Что-то пошло не так!</h3>
         <p class="section-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="button modal__button">Ок</button>
+        <button class="button button--modal">Ок</button>
       </section>
     </div>
 
@@ -197,7 +197,7 @@
           на сайте.</p>
       </section>
       <div class="modal__button-wrapper">
-        <button class="button modal__button">Закрыть окно</button>
+        <button class="button button--modal">Закрыть окно</button>
       </div>
     </div>
   </div>
