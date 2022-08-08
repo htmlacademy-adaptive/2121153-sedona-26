@@ -1,16 +1,30 @@
-.control-input {
+.form__field {
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
 
-  &--user {
+  &::-ms-value {
     color: #000000;
+  }
+
+  &--textarea {
+    height: 170px;
+    resize: none;
+  }
+
+  &::placeholder {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
   }
 }
 
-.review-form__title {
+.form__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -18,7 +32,7 @@
   text-transform: uppercase;
 }
 
-.control {
+.form__label {
   font-weight: 400;
   text-transform: uppercase;
 }

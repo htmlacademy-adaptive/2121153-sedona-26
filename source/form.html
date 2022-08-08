@@ -57,23 +57,23 @@
           достопримечательностях</p>
       </section>
 
-      <form class="review-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="review-form__name">
-          <legend class="review-form__title">Представьтесь:</legend>
-          <label class="control" for="name">Имя*:</label>
-          <input class="control-input control-input--user" id="name" type="text" name="username" value="Пётр">
-          <label class="control" for="surname">Фамилия*:</label>
-          <input class="control-input control-input--user" id="surname" type="text" name="usersurname" value="Пустота">
-          <label class="control" for="patronymic">Отчество:</label>
-          <input class="control-input control-input--user" id="patronymic" type="text" name="userpatronymic" value="Викторович">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="form__name">
+          <legend class="form__title">Представьтесь:</legend>
+          <label class="form__label" for="name">Имя*:</label>
+          <input class="form__field" id="name" type="text" name="username" value="Пётр">
+          <label class="form__label" for="surname">Фамилия*:</label>
+          <input class="form__field" id="surname" type="text" name="usersurname" value="Пустота">
+          <label class="form__label" for="patronymic">Отчество:</label>
+          <input class="form__field" id="patronymic" type="text" name="userpatronymic" value="Викторович">
         </fieldset>
 
-        <fieldset class="review-form__contacts">
-          <legend class="review-form__title">Контактная информация:</legend>
-          <label class="control" for="phone">Контактный телефон*:</label>
-          <input class="control-input" id="phone" type="tel" name="userphone" placeholder="Введите телефон">
-          <label class="control" for="email">Электронная почта*:</label>
-          <input class="control-input" id="email" type="email" name="useremail" placeholder="Введите e-mail">
+        <fieldset class="form__contacts">
+          <legend class="form__title">Контактная информация:</legend>
+          <label class="form__label" for="phone">Контактный телефон*:</label>
+          <input class="form__field" id="phone" type="tel" name="userphone" placeholder="Введите телефон">
+          <label class="form__label" for="email">Электронная почта*:</label>
+          <input class="form__field" id="email" type="email" name="useremail" placeholder="Введите e-mail">
         </fieldset>
 
         <fieldset class="review-form__impression">
@@ -140,7 +140,7 @@
         <fieldset class="review-form__emotions">
           <legend class="review-form__title">Опишите свои эмоции:</legend>
           <label class="visually-hidden" for="emotion">Эмоции</label>
-          <textarea class="control-input" id="emotion" rows="4" cols="20" type="text">Опишите подробно все свои восторги</textarea>
+          <textarea class="form__field form__field--textarea" id="emotion" type="text">Опишите подробно все свои восторги</textarea>
         </fieldset>
 
         <button class="button" type="submit">Отправить отзыв</button>
