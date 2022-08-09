@@ -1,3 +1,23 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #ffffff;
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 .advantages__item {
   margin: 0;
   padding: 26px;
@@ -136,20 +156,38 @@
   background-repeat: no-repeat;
   background-color: rgba(129, 179, 210, 0.5);
   padding: 90px 19px 85px 19px;
+  width: 320px;
+  background-size: cover;
 }
 
-.control-input {
+.page-preview__image--welcome {
+  display: block;
+}
+
+.form__field {
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: rgba(0, 0, 0, 0.3);
 }
-.control-input--user {
+.form__field::-ms-value {
   color: #000000;
 }
+.form__field--textarea {
+  height: 170px;
+  resize: none;
+}
+.form__field::placeholder {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 1;
+}
 
-.review-form__title {
+.form__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -157,12 +195,12 @@
   text-transform: uppercase;
 }
 
-.control {
+.form__label {
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.control-label {
+.form__control-label {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -170,12 +208,16 @@
   text-transform: none;
 }
 
-.footnote {
+.form__footnote {
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
   color: rgba(51, 51, 51, 0.6);
   text-transform: uppercase;
+}
+
+.input:checked + label::before {
+  content: "";
 }
 
 .section-content {
@@ -214,25 +256,5 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  background-color: #ffffff;
-  margin: 0;
-  min-width: 320px;
-}
-
-img {
-  max-width: 100%;
-  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
