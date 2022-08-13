@@ -1,0 +1,15 @@
+@use "./variables.scss";
+
+.page-header__container {
+  display: flex;
+}
+
+.page-header__logo {
+  height: 96px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+  }
+}

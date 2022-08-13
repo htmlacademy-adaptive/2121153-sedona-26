@@ -1,0 +1,18 @@
+.page-container {
+  width: 282px;
+  padding: 0 18px;
+}
+
+@media (min-width: 768px) {
+  .page-container {
+    width: auto;
+    padding: 0 34px;
+  }
+}
+
+@media (min-width: 1068px) {
+  .page-container {
+    width: 960px;
+    padding: 0 64px;
+  }
+}
