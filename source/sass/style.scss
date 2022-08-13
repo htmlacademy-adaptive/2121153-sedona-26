@@ -1,5 +1,28 @@
+<<<<<<< HEAD
 // Начните писать стили здесь
 
 body {
   background-color: tomato;
 }
+=======
+@use "./blocks/base.scss";
+@use "./blocks/advantages.scss";
+@use "./blocks/button.scss";
+@use "./blocks/catalog.scss";
+@use "./blocks/copyright.scss";
+@use "./blocks/fonts.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/modal-failure.scss";
+@use "./blocks/modal-success.scss";
+@use "./blocks/modal.scss";
+@use "./blocks/page-body.scss";
+@use "./blocks/page-container.scss";
+@use "./blocks/page-footer.scss";
+@use "./blocks/page-header.scss";
+@use "./blocks/page-main.scss";
+@use "./blocks/page-preview.scss";
+@use "./blocks/form.scss";
+@use "./blocks/section-content.scss";
+@use "./blocks/social.scss";
+@use "./blocks/visually-hidden.scss";
+>>>>>>> 83c039d14df067aba0b5a8987316a36030eb2044
