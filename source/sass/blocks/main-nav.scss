@@ -7,3 +7,28 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .main-nav__list {
+    width: 1080px;
+  }
+}
