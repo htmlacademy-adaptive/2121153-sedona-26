@@ -1,3 +1,20 @@
+.form__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.form__list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__item {
+  flex: 0 1 50%;
+}
+
 .form__field {
   background-color: #f2f2f2;
   font-weight: 700;
