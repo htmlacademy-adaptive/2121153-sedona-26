@@ -1,7 +1,7 @@
 .section-content {
   margin: 0;
   padding: 32px 20px 16px 18px;
-  width: 320px;
+  min-width: 320px;
 
   &--padding {
     padding: 38px 29px 32px 30px;
@@ -12,7 +12,11 @@
   }
 
   @media (min-width: 768px) {
-    width: 640px;
+    min-width: 640px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1080px;
   }
 }
 
