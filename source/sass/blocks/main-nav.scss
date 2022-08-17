@@ -12,23 +12,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
 
-@media (min-width: 768px) {
-  .main-nav__list {
+  @media (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-  }
-
-  .main-nav__toggle {
-    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
-@media (min-width: 1200px) {
-  .main-nav__list {
-    max-width: 1080px;
-  }
+.main-nav__toggle {
+  display: none;
 }
