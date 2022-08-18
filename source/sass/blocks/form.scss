@@ -5,6 +5,10 @@
 }
 
 .form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -12,7 +16,15 @@
 }
 
 .form__item {
+  @media (min-width: 768px) {
   flex: 0 1 50%;
+  }
+
+  @media (min-width: 1200px) {
+    flex: none;
+    justify-content: space-around;
+  }
+
 }
 
 .form__field {
