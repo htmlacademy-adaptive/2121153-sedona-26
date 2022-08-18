@@ -1,7 +1,31 @@
 .form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+
+  @media (min-width: 1200px) {
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+
+}
+
+.form__grid {
   @media (min-width: 768px) {
     display: flex;
   }
+}
+
+.form__name {
+  width: 50%;
+}
+
+.form__contacts {
+  width: 50%;
 }
 
 .form__list {
@@ -21,8 +45,7 @@
   }
 
   @media (min-width: 1200px) {
-    flex: none;
-    justify-content: space-around;
+    flex: 0 1 25%;
   }
 
 }

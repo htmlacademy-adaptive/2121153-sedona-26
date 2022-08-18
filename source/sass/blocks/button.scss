@@ -1,5 +1,5 @@
 .button {
-  background-color: #81B3D2;
+  background-color: #81b3d2;
   font-family: inherit;
   font-weight: 700;
   font-size: 21px;
@@ -8,6 +8,7 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 16px 49px;
+  display: flex;
 
   &--modal {
     font-weight: 700;
