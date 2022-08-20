@@ -23,7 +23,33 @@
       width: 100%;
     }
   }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    width: calc(100% / 3);
+    position: relative;
+  }
+
+  &--full {
+    @media (min-width: 1200px) {
+      width: 100%;
+    }
+  }
 }
+
+.catalog__card-content {
+  @media (min-width: 1200px) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    background-color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+  }
+}
+
 .catalog__link {
   font-weight: 700;
   font-size: 14px;
@@ -31,6 +57,11 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+
+  @media (min-width: 1200px) {
+    display: block;
+    color: #ffffff;
+  }
 }
 
 .catalog__author {
@@ -40,4 +71,18 @@
 .catalog__amount-like {
   font-weight: 700;
   color: #000000;
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+  }
+}
+
+.catalog__image-wrapper {
+  display: block;
+  width: 100%;
+}
+
+.catalog__image {
+  display: block;
+  width: 100%;
 }
