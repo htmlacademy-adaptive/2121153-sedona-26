@@ -1,6 +1,12 @@
 .page-footer {
   margin: 0;
-  padding: 38px 78px 29px 76px;
+  padding: 30px 78px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__tag {

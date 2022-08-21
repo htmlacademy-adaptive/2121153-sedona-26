@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: отзывы</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -58,6 +59,8 @@
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+        <div class="form__wrapper">
+        <div class="form__grid">
         <fieldset class="form__name">
           <legend class="form__title">Представьтесь:</legend>
             <div class="form__item">
@@ -85,6 +88,7 @@
             <input class="form__field" id="email" type="email" name="useremail" placeholder="Введите e-mail">
           </div>
         </fieldset>
+        </div>
 
         <fieldset class="form__impression">
           <legend class="form__title">Ваше общее впечатление:</legend>
@@ -134,6 +138,7 @@
 
         <button class="button" type="submit">Отправить отзыв</button>
         <span class="form__footnote">* — обязательные поля</span>
+      </div>
       </form>
     </main>
 
@@ -169,7 +174,7 @@
       </div>
     </footer>
 
-    <div class="modal modal-failure">
+    <div class="modal modal-failure modal-close">
       <section class="section-content modal__section-content">
         <h3 class="section-content__title">Что-то пошло не так!</h3>
         <p class="section-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -178,7 +183,7 @@
       </section>
     </div>
 
-    <div class="modal modal-success">
+    <div class="modal modal-success modal-close">
       <section class="section-content modal__section-content">
         <h3 class="section-content__title">Ваш отзыв отправлен!</h3>
         <p class="section-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время

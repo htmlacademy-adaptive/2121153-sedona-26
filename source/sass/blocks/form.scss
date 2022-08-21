@@ -1,9 +1,61 @@
+.form__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+
+  @media (min-width: 1200px) {
+    padding-left: 120px;
+    padding-right: 120px;
+    }
+
+}
+
+.form__grid {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.form__name {
+  width: 50%;
+}
+
+.form__contacts {
+  width: 50%;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__item {
+  @media (min-width: 768px) {
+  flex: 0 1 50%;
+  }
+
+  @media (min-width: 1200px) {
+    flex: 0 1 25%;
+  }
+
+}
+
 .form__field {
   background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
 
   &::-ms-value {
     color: #000000;

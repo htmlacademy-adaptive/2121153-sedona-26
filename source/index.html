@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -10,9 +11,9 @@
 <body class="page-body">
   <div class="page-container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="./img/logo.svg" width="195" height="96" alt="Городок Седона.">
-      </a>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="./img/logo.svg" width="195" height="96" alt="Городок Седона.">
+        </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -45,7 +46,7 @@
 
       <div class="page-preview">
         <h2 class="visually-hidden">О Седоне</h2>
-        <img class="page-preview__image--welcome" src="./img/logo-welcome.svg"
+        <img class="page-preview__image-welcome" src="./img/logo-welcome.svg"
           alt="Добро пожаловать в Седону.">
       </div>
 
@@ -57,50 +58,49 @@
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <ol class="advantages__list">
-          <li class="advantages__item">
-            <div class="advantages__item--background">
-            <h3 class="advantages__title advantages__title--accent">Настоящий городок</h3>
-            <span class="advantages__number advantages__number--accent advantages__number--accent-bold">— №1 —</span>
-            <p class="advantages__description advantages__description--accent">Седона не аттракцион для туристов, там
-              течет своя жизнь</p>
-            </div>
-            <img class="advantages__image" src="./img/advantages-1.jpg" width="320" height="260"
+          <li class="advantages__item advantages__item--image">
+              <div class="advantages__item-content">
+                <h3 class="advantages__title advantages__title--accent">Настоящий городок</h3>
+                <span class="advantages__number advantages__number--accent">— №1 —</span>
+                <p class="advantages__description advantages__description--accent">Седона не аттракцион для туристов, там
+                  течет своя жизнь</p>
+              </div>
+              <img class="advantages__image" src="./img/advantages-1.jpg" width="320" height="260"
               alt="Улица в городке Седона.">
             <ul class="advantages__list">
-              <li class="advantages__item advantages__item--house advantages__item--inner">
+              <li class="advantages__item advantages__item--house">
                 <h4 class="advantages__title">Жилье</h4>
                 <p class="advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item advantages__item--food advantages__item--inner">
+              <li class="advantages__item advantages__item--food">
                 <h4 class="advantages__title">Еда</h4>
                 <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item advantages__item--souvenir advantages__item--inner">
+              <li class="advantages__item advantages__item--souvenir">
                 <h4 class="advantages__title">Сувениры</h4>
                 <p class="advantages__description">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
-          <li class="advantages__item">
-            <div class="advantages__item--background advanatges__item--padding">
-            <h3 class="advantages__title advantages__title--accent">Там есть мост дьявола</h3>
-            <span class="advantages__number advantages__number--accent">— №2 —</span>
-            <p class="advantages__description advantages__description--accent">Да, по нему можно пройти! Если вы
-              осмелитесь, конечно</p>
-            </div>
+          <li class="advantages__item advantages__item--image">
             <img class="advantages__image" src="./img/advantages-2.jpg" width="320" height="260" alt="Мост в Седоне.">
+            <div class="advantages__item-content">
+              <h3 class="advantages__title advantages__title--accent">Там есть мост дьявола</h3>
+              <span class="advantages__number advantages__number--accent">— №2 —</span>
+              <p class="advantages__description advantages__description--accent">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
           </li>
-          <li class="advantages__item advantages__item--tonality">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Небольшая площадь</h3>
             <span class="advantages__number">— №3 —</span>
             <p class="advantages__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item advantages__item--tonality">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Красивая дорога</h3>
             <span class="advantages__number">— №4 —</span>
             <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item advantages__item--tonality">
+          <li class="advantages__item advantages__item--background">
             <h3 class="advantages__title">Мало туристов</h3>
             <span class="advantages__number">— №5 —</span>
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -108,7 +108,7 @@
         </ol>
       </section>
 
-      <section class="section-content section-content--padding">
+      <section class="section-content">
         <h2 class="section-content__title section-content__title-accent">Заинтересовались?</h2>
         <p class="section-content__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц
