@@ -138,3 +138,19 @@
   position: static;
   min-height: 0;
 }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}

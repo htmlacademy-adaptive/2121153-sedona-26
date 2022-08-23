@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.page-header__logo {
+  height: 96px;
+}
+
+
 @media (min-width: 768px) {
   .page-header {
     display: flex;
@@ -19,3 +24,4 @@
   height: 96px;
   width: 185px;
 }
+
