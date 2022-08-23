@@ -41,6 +41,21 @@
   &--background {
     background-color: #EEEEEE;
   }
+
+  &--house {
+    position: absolute;
+  }
+
+  &--house::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 37px;
+    background-image: url(../../img/advantages-icon-house.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 .advantages__image {
@@ -81,5 +96,23 @@
 
   &--accent {
     color: #ffffff;
+  }
+}
+
+.advantages {
+  position: relative;
+}
+
+.advantages::before {
+
+  @media (max-width: 320px) {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 37px;
+    z-index: 5;
+    background-image: url(../../img/devider-advantages.svg);
   }
 }
