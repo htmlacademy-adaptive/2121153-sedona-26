@@ -1,6 +1,9 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  min-height: 56px;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -11,11 +14,9 @@
 }
 
 .page-header__logo {
-  height: 56px;
-  text-align: center;
-}
-
-.page-header__logo-image {
-  height: 96px;
-  width: 185px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
