@@ -45,8 +45,19 @@
     }
   }
 
-  &--background {
-    background-color: #eeeeee;
+  &--decor {
+    position: relative;
+    padding-left: 65px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 18px;
+    top: -7px;
+    background-repeat: no-repeat;
   }
 
   &--house::before {
@@ -61,19 +72,8 @@
     background-image: url(../../img/advantages-icon-souvenir.svg);
   }
 
-  &--decor {
-    position: relative;
-    padding-left: 65px;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 18px;
-    top: -7px;
-    background-repeat: no-repeat;
+  &--background {
+    background-color: #eeeeee;
   }
 }
 
