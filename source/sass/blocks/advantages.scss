@@ -1,3 +1,23 @@
+.advantages {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 37px;
+    z-index: 5;
+    background-repeat: no-repeat;
+    background-image: url("../../img/devider-advantages.svg");
+
+    @media (min-width: 321px) {
+      display: none;
+    }
+  }
+}
+
 .advantages__list {
   margin: 0;
   padding: 0;
@@ -7,19 +27,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-  }
-}
-
-.advantages__item-content {
-  background-color: #81B3D2;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 256px;
-    width: calc(100% / 3);
-    box-sizing: border-box;
   }
 }
 
@@ -39,28 +46,47 @@
   }
 
   &--background {
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
   }
 
-  &--house {
-    position: absolute;
+  &--house::before {
+    background-image: url(../../img/advantages-icon-house.svg);
   }
 
-  &--house::before{
+  &--food::before {
+    background-image: url(../../img/advantages-icon-food.svg);
+  }
+
+  &--souvenir::before {
+    background-image: url(../../img/advantages-icon-souvenir.svg);
+  }
+
+  &--decor {
+    position: relative;
+    padding-left: 65px;
+  }
+
+  &::before {
     content: "";
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 37px;
-    background-image: url(../../img/advantages-icon-house.svg);
+    width: 40px;
+    height: 40px;
+    left: 18px;
+    top: -7px;
     background-repeat: no-repeat;
   }
 }
 
-.advantages__image {
+.advantages__item-content {
+  background-color: #81b3d2;
+
   @media (min-width: 768px) {
-    width: calc((100% / 3) * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 256px;
+    width: calc(100% / 3);
+    box-sizing: border-box;
   }
 }
 
@@ -99,20 +125,10 @@
   }
 }
 
-.advantages {
-  position: relative;
-}
+.advantages__image {
+  display: block;
 
-.advantages::before {
-
-  @media (max-width: 320px) {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    height: 37px;
-    z-index: 5;
-    background-image: url(../../img/devider-advantages.svg);
+  @media (min-width: 768px) {
+    width: calc((100% / 3) * 2);
   }
 }
