@@ -5,13 +5,12 @@
   @media (min-width: 768px) {
     padding-left: 60px;
     padding-right: 60px;
-    }
+  }
 
   @media (min-width: 1200px) {
     padding-left: 120px;
     padding-right: 120px;
-    }
-
+  }
 }
 
 .form__grid {
@@ -24,19 +23,12 @@
   width: 50%;
 }
 
-.form__contacts {
-  width: 50%;
-}
-
-.form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .form__item {
@@ -47,7 +39,11 @@
   @media (min-width: 1200px) {
     flex: 0 1 25%;
   }
+}
 
+.form__label {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .form__field {
@@ -76,17 +72,19 @@
   }
 }
 
-.form__title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: uppercase;
+.form__contacts {
+  width: 50%;
 }
 
-.form__label {
-  font-weight: 400;
-  text-transform: uppercase;
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .form__control-label {
