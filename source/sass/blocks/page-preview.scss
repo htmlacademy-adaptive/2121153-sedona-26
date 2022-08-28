@@ -14,7 +14,7 @@
     bottom: 0;
     height: 57px;
     z-index: 5;
-    background-image: url(../../img/devider-preview.svg);
+    background-image: url("../../img/devider-preview.svg");
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
@@ -25,7 +25,7 @@
       bottom: 0;
       height: 57px;
       z-index: 5;
-      background-image: url(../../img/devider-preview-tablet.svg);
+      background-image: url("../../img/devider-preview-tablet.svg");
     }
 
     @media (min-width: 1200px) {
@@ -36,7 +36,7 @@
       bottom: 0;
       height: 57px;
       z-index: 5;
-      background-image: url(../../img/devider-preview-desktop.svg);
+      background-image: url("../../img/devider-preview-desktop.svg");
     }
   }
 }
