@@ -1,11 +1,19 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  min-height: 56px;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 .page-header__logo {
-  height: 96px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
 }
+
 
 @media (min-width: 768px) {
   .page-header {

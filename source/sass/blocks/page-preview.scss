@@ -1,9 +1,44 @@
 .page-preview {
   background-image: url("../../img/page-preview-background.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(129,179,210, 0.5);
+  background-color: rgba(129, 179, 210, 0.5);
   padding: 90px 19px 85px 19px;
   background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57px;
+    z-index: 5;
+    background-image: url("../../img/devider-preview.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 57px;
+      z-index: 5;
+      background-image: url("../../img/devider-preview-tablet.svg");
+    }
+
+    @media (min-width: 1200px) {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 57px;
+      z-index: 5;
+      background-image: url("../../img/devider-preview-desktop.svg");
+    }
+  }
 }
 
 .page-preview__image--welcome {
