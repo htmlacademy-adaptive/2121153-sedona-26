@@ -49,6 +49,10 @@
   &--decor {
     position: relative;
     padding-left: 65px;
+
+    @media (min-width: 768px) {
+      padding: 20px;
+    }
   }
 
   &::before {
@@ -59,6 +63,11 @@
     left: 18px;
     top: -7px;
     background-repeat: no-repeat;
+
+    @media (min-width: 768px) {
+      left: 100px;
+      margin-bottom: 30px;
+    }
   }
 
   &--house::before {
@@ -77,6 +86,7 @@
     background-color: #eeeeee;
   }
 }
+
 
 .advantages__item-content {
   background-color: #81b3d2;

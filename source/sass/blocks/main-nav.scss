@@ -20,6 +20,15 @@
   cursor: pointer;
   border: none;
 
+  &:hover {
+    background-color: rgba(129, 179, 210, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(129, 179, 210, 0.3);
+  }
+
+
   @media (min-width: 768px) {
     display: none;
   }
@@ -42,16 +51,28 @@
     bottom: 4px;
   }
 
-  .main-nav--opened &::before,
-  .main-nav--nojs &::before {
-    top: 8px;
-    transform: rotate(45deg);
+  .main-nav--opened &,
+  .main-nav--nojs & {
+    &::before {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+
+    &:hover::before {
+      opacity: 0.6;
+    }
   }
 
-  .main-nav--opened &::after,
-  .main-nav--nojs &::after {
-    bottom: 8px;
-    transform: rotate(-45deg);
+  .main-nav--opened &,
+  .main-nav--nojs & {
+    &::after {
+      bottom: 8px;
+      transform: rotate(-45deg);
+    }
+
+    &:hover::after {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -77,11 +98,9 @@
   text-align: center;
   background-color: #81b3d2;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  padding: 10px 80px;
 
   @media (min-width: 768px) {
     width: 20%;
-    margin-right: 20%;
     background-color: #ffffff;
     box-shadow: none;
   }
@@ -90,10 +109,6 @@
     @media (min-width: 768px) {
       margin-right: 20%;
     }
-  }
-
-  @media (min-width: 1200px) {
-    padding: 18px 80px;
   }
 }
 
