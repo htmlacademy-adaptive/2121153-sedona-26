@@ -61,10 +61,11 @@
     &:hover::before {
       opacity: 0.6;
     }
-  }
 
-  .main-nav--opened &,
-  .main-nav--nojs & {
+    &:active::before {
+      opacity: 0.3;
+    }
+
     &::after {
       bottom: 8px;
       transform: rotate(-45deg);
@@ -72,6 +73,10 @@
 
     &:hover::after {
       opacity: 0.6;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
