@@ -6,6 +6,11 @@
   z-index: 1;
 }
 
+.page-header__logo {
+  height: 96px;
+}
+
+
 @media (min-width: 768px) {
   .page-header {
     display: flex;
@@ -20,3 +25,4 @@
   z-index: 1;
   transform: translateX(-50%);
 }
+
