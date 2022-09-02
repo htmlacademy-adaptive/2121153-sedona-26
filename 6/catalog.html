@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Седона: галерея фото и видео</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2121153-sedona-26/6/">
+</head>
+
+<body class="page-body">
+  <div class="page-container">
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="./img/logo.svg" width="195" height="96" alt="Городок Седона.">
+      </a>
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Галерея</h1>
+
+      <div class="page-preview">
+        <h2 class="visually-hidden">Городок Седона</h2>
+        <img class="page-preview__image" src="./img/logo-sedona.svg" width="229" height="39" alt="Логотип Седоны.">
+      </div>
+
+      <section class="section-content">
+        <h2 class="section-content__title">Фото и видео</h2>
+        <p class="section-content__description section-description--accent">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о
+          политике и экономике.</p>
+      </section>
+
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__card catalog__card--full">
+            <a class="catalog__image-wrapper" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-1-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-1.jpg" alt="Пейзаж дороги в Седону.">
+              </picture>
+            </a>
+            <div class="catalog__card-content">
+              <h3 class="catalog__card-title">
+                <a class="catalog__link" href="#">Неродные просторы</a>
+              </h3>
+              <span class="catalog__author">Автор фото: Борис</span>
+              <span class="catalog__card-like"></span>
+              <span class="catalog__amount-like">1350</span>
+            </div>
+          </li>
+
+          <li class="catalog__card">
+            <a class="catalog__image-wrapper" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-2-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-2.jpg" alt="Растения в окрестностях Седоны.">
+              </picture>
+            </a>
+            <div class="catalog__card-content">
+              <h3 class="catalog__card-title">
+                <a class="catalog__link" href="#">Местная растительность</a>
+              </h3>
+              <span class="catalog__author">Автор фото: Сергей</span>
+              <span class="catalog__card-like"></span>
+              <span class="catalog__amount-like">143</span>
+            </div>
+          </li>
+
+          <li class="catalog__card">
+            <a class="catalog__image-wrapper" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-3-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-3.jpg" alt="Горный серпантин.">
+              </picture>
+            </a>
+            <div class="catalog__card-content">
+              <h3 class="catalog__card-title">
+                <a class="catalog__link" href="#">Дорога на север</a>
+              </h3>
+              <span class="catalog__author">Автор фото: Петр</span>
+              <span class="catalog__card-like"></span>
+              <span class="catalog__amount-like">96</span>
+            </div>
+          </li>
+
+          <li class="catalog__card">
+            <a class="catalog__image-wrapper" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-4-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-4.jpg" alt="Вид на горы Седоны.">
+              </picture>
+            </a>
+            <div class="catalog__card-content">
+              <h3 class="catalog__card-title">
+                <a class="catalog__link" href="#">Мост Дьявола</a>
+              </h3>
+              <span class="catalog__author">Автор фото: Антон</span>
+              <span class="catalog__card-like"></span>
+              <span class="catalog__amount-like">254</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-content">
+        <h2 class="section-content__title">Все еще сомневаетесь?</h2>
+        <p class="section-content__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной
+          раз!</p>
+        <video class="section-content__video" src="#"></video>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <a class="page-footer__tag" href="https://twitter.com/hashtag/visitsedona">#visitSEDONA</a>
+
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">YouTube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        <span class="copyright__text">Разработано</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
