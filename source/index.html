@@ -69,11 +69,9 @@
                   течет своя жизнь</p>
               </div>
               <picture>
-                <!--
-                <source media="(min-width: 1200px)" srcset="./img/advantages-1-desktop.jpg 1x, ./img/advantages-1-desktop-2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="./img/advantages-1-tablet.jpg 1x, ./img/advantages-1-tablet-2x.jpg 2x">
-                -->
-                <img class="advantages__image" src="./img/advantages-1.jpg" width="320" height="260" srcset="./img/advantages-1-2x.jpg" alt="Улица в городке Седона.">
+                <source media="(min-width: 1200px)" srcset="./img/advantages-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/advantages-1-tablet.jpg">
+                <img class="advantages__image" src="./img/advantages-1.jpg" alt="Улица в городке Седона.">
               </picture>
                 <ul class="advantages__list">
               <li class="advantages__item advantages__item--decor advantages__item--house">
@@ -91,7 +89,11 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--image">
-            <img class="advantages__image" src="./img/advantages-2.jpg" width="320" height="260" alt="Мост в Седоне.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/advantages-2-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="./img/advantages-2-tablet.jpg">
+              <img class="advantages__image" src="./img/advantages-2.jpg" alt="Мост в Седоне.">
+            </picture>
             <div class="advantages__item-content">
               <h3 class="advantages__title advantages__title--accent">Там есть мост дьявола</h3>
               <span class="advantages__number advantages__number--accent">— №2 —</span>
