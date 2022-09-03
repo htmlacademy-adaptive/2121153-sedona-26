@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: галерея фото и видео</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page-body">
@@ -60,8 +64,11 @@
         <ul class="catalog__list">
           <li class="catalog__card catalog__card--full">
             <a class="catalog__image-wrapper" href="#">
-              <img class="catalog__image" src="./img/catalog-1.jpg" width="280" height="280"
-                alt="Пейзаж дороги в Седону.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-1-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-1-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-1.jpg" alt="Пейзаж дороги в Седону.">
+              </picture>
             </a>
             <div class="catalog__card-content">
               <h3 class="catalog__card-title">
@@ -75,8 +82,11 @@
 
           <li class="catalog__card">
             <a class="catalog__image-wrapper" href="#">
-              <img class="catalog__image" src="./img/catalog-2.jpg" width="280" height="280"
-                alt="Растения в окрестностях Седоны.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-2-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-2-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-2.jpg" alt="Растения в окрестностях Седоны.">
+              </picture>
             </a>
             <div class="catalog__card-content">
               <h3 class="catalog__card-title">
@@ -90,7 +100,11 @@
 
           <li class="catalog__card">
             <a class="catalog__image-wrapper" href="#">
-              <img class="catalog__image" src="./img/catalog-3.jpg" width="280" height="280" alt="Горный серпантин.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-3-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-3-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-3.jpg" alt="Горный серпантин.">
+              </picture>
             </a>
             <div class="catalog__card-content">
               <h3 class="catalog__card-title">
@@ -104,7 +118,11 @@
 
           <li class="catalog__card">
             <a class="catalog__image-wrapper" href="#">
-              <img class="catalog__image" src="./img/catalog-4.jpg" width="280" height="280" alt="Вид на горы Седоны.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./img/catalog-4-desktop.jpg">
+                <source media="(min-width: 768px)" srcset="./img/catalog-4-tablet.jpg">
+                <img class="catalog__image" src="./img/catalog-4.jpg" alt="Вид на горы Седоны.">
+              </picture>
             </a>
             <div class="catalog__card-content">
               <h3 class="catalog__card-title">
