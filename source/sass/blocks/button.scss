@@ -1,4 +1,5 @@
 .button {
+  display: block;
   background-color: #81b3d2;
   font-family: inherit;
   font-weight: 700;
@@ -7,12 +8,57 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 16px 49px;
-  display: flex;
+  text-align: center;
+  padding: 16px 10px;
+  border: none;
 
   &--modal {
+    width: 100%;
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
+
+    .modal-failure & {
+      max-width: 180px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 28px;
+
+      @media (min-width: 768px) {
+        max-width: 272px;
+        margin-top: 46px;
+        margin-bottom: 13px;
+      }
+    }
+
+    .modal-success & {
+      @media (min-width: 768px) {
+        font-size: 21px;
+        line-height: 26px;
+      }
+    }
+  }
+
+  &--open-search {
+    margin-top: 31px;
+    margin-bottom: 31px;
+
+    @media (min-width: 768px) {
+      max-width: 458px;
+      margin: 42px auto 5px;
+    }
+  }
+
+  &--submit {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      max-width: 324px;
+      margin-right: auto;
+    }
+
+    @media (min-width: 1200px) {
+      max-width: 384px;
+    }
   }
 }
