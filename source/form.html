@@ -5,18 +5,20 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Седона: отзывы</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon32.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page-body">
   <div class="page-container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="./img/logo.svg" width="195" height="96" alt="Городок Седона.">
+      <a class="page-header__logo" href="/">
+        <img class="page-header__logo-image" src="./img/logo.svg" width="185" height="96" alt="Городок Седона.">
       </a>
       <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -55,18 +57,20 @@
         <img class="page-preview__image" src="./img/logo-sedona.svg" width="229" height="39" alt="Логотип Седоны.">
       </div>
 
-      <section class="section-content section-content--indent">
+      <section class="section-content">
+        <div class="section-content__inner">
         <h2 class="section-content__title">Оставьте свой отзыв</h2>
-        <p class="section-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+        <p class="section-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о
           посещенных вами
           достопримечательностях</p>
+        </div>
       </section>
 
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="form__wrapper">
         <div class="form__grid">
-        <fieldset class="form__name">
-          <legend class="form__title">Представьтесь:</legend>
+        <fieldset class="form__name form__group">
+          <span class="form__title">Представьтесь:</span>
             <div class="form__item">
             <label class="form__label" for="name">Имя*:</label>
             <input class="form__field" id="name" type="text" name="username" value="Пётр">
@@ -81,21 +85,25 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__contacts">
-          <legend class="form__title">Контактная информация:</legend>
+        <fieldset class="form__contacts form__group">
+          <span class="form__title">Контактная информация:</span>
           <div class="form__item">
             <label class="form__label" for="phone">Контактный телефон*:</label>
-            <input class="form__field" id="phone" type="tel" name="userphone" placeholder="Введите телефон">
+            <div class="form__field-wrapper form__field-wrapper--phone">
+              <input class="form__field" id="phone" type="tel" name="userphone" placeholder="Введите телефон">
+            </div>
           </div>
           <div class="form__item">
             <label class="form__label" for="email">Электронная почта*:</label>
-            <input class="form__field" id="email" type="email" name="useremail" placeholder="Введите e-mail">
+            <div class="form__field-wrapper form__field-wrapper--mail">
+              <input class="form__field" id="email" type="email" name="useremail" placeholder="Введите e-mail">
+            </div>
           </div>
         </fieldset>
         </div>
 
-        <fieldset class="form__impression">
-          <legend class="form__title">Ваше общее впечатление:</legend>
+        <fieldset class="form__impression form__group">
+          <span class="form__title">Ваше общее впечатление:</span>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__control form__control--radio visually-hidden" checked type="radio" name="impression" value="positive" id="positive">
@@ -112,8 +120,8 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__sights">
-          <legend class="form__title">Посещенные достопримечательности:</legend>
+        <fieldset class="form__sights form__group">
+          <span class="form__title">Посещенные<br> достопримечательности:</span>
           <ul class="form__list">
             <li class="form__item">
               <input class="form__control form__control--checkbox visually-hidden" checked type="checkbox" name="bridge" id="bridge">
@@ -134,14 +142,17 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__emotions">
-          <legend class="form__title">Опишите свои эмоции:</legend>
+        <fieldset class="form__emotions form__group">
+          <span class="form__title">Опишите свои эмоции:</span>
           <label class="visually-hidden" for="emotion">Эмоции</label>
-          <textarea class="form__field form__field--textarea" id="emotion" type="text">Опишите подробно все свои восторги</textarea>
+          <textarea class="form__field form__field--textarea" id="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <button class="button" type="submit">Отправить отзыв</button>
-        <span class="form__footnote">* — обязательные поля</span>
+          <div class="form__footer">
+            <button class="button button--submit" type="submit">Отправить отзыв</button>
+            <span class="form__footnote">* — обязательные поля</span>
+          </div>
+
       </div>
       </form>
     </main>
@@ -154,16 +165,25 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon--vk" />
+              </svg>
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon--tg" />
+              </svg>
               <span class="visually-hidden">Телеграм</span>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="24" height="24">
+                <use xlink:href="./img/sprite.svg#icon--yt" />
+              </svg>
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -173,32 +193,38 @@
       <div class="copyright">
         <span class="copyright__text">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="./img/icon--html-logo.svg" alt="" width="27" height="35">
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
 
     <div class="modal modal-failure modal-close">
-      <section class="section-content modal__section-content">
-        <h3 class="section-content__title">Что-то пошло не так!</h3>
+      <section class="section-content modal__section-content ">
+        <div class="section-content__inner">
+        <h3 class="section-content__title">Что-то пошло не&nbsp;так!</h3>
         <p class="section-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <button class="button button--modal">Ок</button>
+        </div>
       </section>
     </div>
 
     <div class="modal modal-success modal-close">
       <section class="section-content modal__section-content">
+        <div class="section-content__inner">
         <h3 class="section-content__title">Ваш отзыв отправлен!</h3>
-        <p class="section-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <p class="section-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время
           мы опубликуем его
           на сайте.</p>
+        </div>
+        <div class="modal__footer">
+          <button class="button button--modal">ЗАкРЫТЬ ОКНО</button>
+        </div>
       </section>
-      <div class="modal__button-wrapper">
-        <button class="button button--modal">Закрыть окно</button>
-      </div>
+
     </div>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.min.js"></script>
 </body>
 </html>

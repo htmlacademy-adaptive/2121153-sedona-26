@@ -5,9 +5,9 @@
 @use "./blocks/copyright.scss";
 @use "./blocks/fonts.scss";
 @use "./blocks/main-nav.scss";
+@use "./blocks/modal.scss";
 @use "./blocks/modal-failure.scss";
 @use "./blocks/modal-success.scss";
-@use "./blocks/modal.scss";
 @use "./blocks/page-body.scss";
 @use "./blocks/page-container.scss";
 @use "./blocks/page-footer.scss";
@@ -19,3 +19,4 @@
 @use "./blocks/social.scss";
 @use "./blocks/visually-hidden.scss";
 @use "./blocks/modal-close.scss";
+@use "./blocks/video.scss";

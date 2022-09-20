@@ -1,4 +1,18 @@
+.copyright {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 120px;
+  }
+}
+
 .copyright__text {
+  margin-right: 10px;
   font-weight: 400;
   text-transform: uppercase;
 }

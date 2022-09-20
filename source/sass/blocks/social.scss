@@ -1,0 +1,27 @@
+.social {
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: #81B3D2;
+}
