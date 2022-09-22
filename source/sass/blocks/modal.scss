@@ -1,0 +1,38 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal__section-content {
+  width: 100%;
+  background-color: #ffffff;
+
+  .modal-failure & {
+    @media (min-width: 768px) {
+      max-width: 400px;
+    }
+  }
+
+  .modal-success & {
+    @media (min-width: 768px) {
+      max-width: 640px;
+    }
+  }
+}
+
+.modal__footer {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: 768px) {
+    padding: 44px 91px;
+  }
+}

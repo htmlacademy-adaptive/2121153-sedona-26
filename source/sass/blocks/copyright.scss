@@ -1,4 +1,36 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    color: #81b3d2;
+
+    & svg {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: #b3b3b3;
+
+    & svg {
+      fill: #b3b3b3;
+    }
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 120px;
+  }
+}
+
 .copyright__text {
+  margin-right: 10px;
   font-weight: 400;
   text-transform: uppercase;
 }
