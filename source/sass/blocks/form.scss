@@ -7,7 +7,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-top: 40px;
+    margin-top: 33px;
   }
 }
 
@@ -16,7 +16,7 @@
   margin-left: 0;
   margin-right: 0;
   border: none;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -26,10 +26,11 @@
 
     &:first-child {
       padding-right: 48px;
-      border-right: 1px solid #E5E5E5;
+      border-right: 1px solid #e5e5e5;
 
       @media (min-width: 1200px) {
         padding-right: 63px;
+        width: calc(51% + 5px);
       }
     }
 
@@ -38,6 +39,7 @@
 
       @media (min-width: 1200px) {
         padding-left: 63px;
+        width: calc(49% - 5px);
       }
     }
   }
@@ -66,8 +68,6 @@
     padding-bottom: 26px;
   }
 }
-
-
 
 .form__wrapper {
   @media (min-width: 768px) {
@@ -110,6 +110,18 @@
     }
   }
 
+  .form__group:first-child & {
+    @media (min-width: 1200px) {
+      padding-left: 60px;
+    }
+  }
+
+  .form__group:last-child & {
+    @media (min-width: 1200px) {
+      padding-right: 60px;
+    }
+  }
+
   @media (min-width: 768px) {
     margin-bottom: 28px;
     font-size: 21px;
@@ -147,12 +159,21 @@
   display: block;
   width: 100%;
   padding: 16px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   border: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
 
   &::-ms-value {
     color: #000000;
@@ -193,7 +214,7 @@
     right: 0;
     width: 58px;
     height: 58px;
-    background-color: #E6E6E6;
+    background-color: #e6e6e6;
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -245,6 +266,7 @@
 }
 
 .form__control-label {
+  position: relative;
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -253,15 +275,43 @@
   color: #000000;
   text-transform: none;
 
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
   &::before {
     content: "";
     width: 46px;
     height: 46px;
     margin-right: 16px;
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
 
     .form__control--radio + & {
       border-radius: 100%;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 46px;
+    height: 46px;
+
+    .form__control--radio + & {
+      border-radius: 100%;
+    }
+
+    .form__control--checkbox + & {
+      border-radius: 4px;
     }
 
     .form__control--radio:checked + & {
@@ -274,6 +324,11 @@
       background-image: url("../img/icon--check.svg");
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .form__control--radio:focus + &,
+    .form__control--checkbox:focus + & {
+      border: 2px solid #000000;
     }
   }
 }

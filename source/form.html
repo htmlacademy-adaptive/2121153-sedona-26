@@ -34,8 +34,8 @@
                 Фото и видео
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link">
+            <li class="main-nav__item ">
+              <a class="main-nav__link main-nav__link--current">
                 Форма отзыва
               </a>
             </li>
@@ -57,7 +57,7 @@
         <img class="page-preview__image" src="./img/logo-sedona.svg" width="229" height="39" alt="Логотип Седоны.">
       </div>
 
-      <section class="section-content">
+      <section class="section-content section-content--form-description">
         <div class="section-content__inner">
         <h2 class="section-content__title">Оставьте свой отзыв</h2>
         <p class="section-content__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о
@@ -190,13 +190,12 @@
         </ul>
       </div>
 
-      <div class="copyright">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="./img/icon--html-logo.svg" alt="" width="27" height="35">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
-      </div>
+        <svg width="27" height="35">
+          <use xlink:href="./img/sprite.svg#icon--html-logo" />
+        </svg>
+      </a>
     </footer>
 
     <div class="modal modal-failure modal-close">
