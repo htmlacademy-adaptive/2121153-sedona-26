@@ -23,5 +23,17 @@
   justify-content: center;
   width: 48px;
   height: 48px;
-  background-color: #81B3D2;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & svg {
+      opacity: 0.3;
+    }
+  }
 }
