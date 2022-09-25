@@ -12,6 +12,19 @@
   padding: 16px 10px;
   border: none;
 
+  &:not(:disabled):hover {
+    background-color: #669ec0;
+  }
+
+  &:not(:disabled):active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+
   &--modal {
     width: 100%;
     font-weight: 700;
@@ -59,6 +72,7 @@
 
     @media (min-width: 1200px) {
       max-width: 384px;
+      padding: 20px 10px 12px 0;
     }
   }
 }
