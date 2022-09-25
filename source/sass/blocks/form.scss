@@ -50,7 +50,7 @@
 
   @media (min-width: 768px) {
     width: 100%;
-    padding-bottom: 32px;
+    padding-bottom: 28px;
   }
 }
 
@@ -65,7 +65,7 @@
 
   @media (min-width: 768px) {
     width: 100%;
-    padding-bottom: 26px;
+    padding-bottom: 30px;
   }
 }
 
@@ -88,7 +88,7 @@
   }
 
   @media (min-width: 1200px) {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
   }
 }
 
@@ -101,6 +101,30 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+
+  *:not(.form__grid) & {
+    @media (min-width: 1200px) {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 280px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
 
   & br {
     display: inline;
@@ -138,11 +162,12 @@
 
   @media (min-width: 1200px) {
     .form__impression & {
-      flex: 0 1 calc(100% / 3);
+      flex: 0 1 calc((100% / 3) - 28px);
+      margin-left: 28px;
     }
 
     .form__sights & {
-      flex: 0 1 25%;
+      flex: 0 1 auto;
     }
   }
 }
@@ -252,15 +277,18 @@
 
   @media (min-width: 1200px) {
     .form__impression & {
-      margin-top: 40px;
+      margin-top: 44px;
       margin-bottom: 30px;
+      padding-left: 26px;
+      padding-right: 10px;
     }
 
     .form__sights & {
+      justify-content: space-between;
       margin-top: 60px;
       margin-bottom: 40px;
       padding-left: 45px;
-      padding-right: 0;
+      padding-right: 45px;
     }
   }
 }
@@ -362,6 +390,7 @@
 
   @media (min-width: 1200px) {
     max-width: 808px;
+    margin-top: 48px;
     margin-left: auto;
     margin-right: auto;
   }

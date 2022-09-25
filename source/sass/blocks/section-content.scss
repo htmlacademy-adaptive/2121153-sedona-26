@@ -171,13 +171,25 @@
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg--map-2x.jpg");
+  }
+
   @media (min-width: 768px) {
     margin-bottom: 0;
     background-image: url("../img/bg--map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg--map-tablet.jpg");
+    }
   }
 
   @media (min-width: 1200px) {
     margin-top: 15px;
     background-image: url("../img/bg--map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg--map-desktop.jpg");
+    }
   }
 }
